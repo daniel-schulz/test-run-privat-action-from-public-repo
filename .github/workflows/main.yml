@@ -30,6 +30,7 @@ jobs:
         with:
           repository: daniel-schulz/private-actions-test
           token: ${{ secrets.YOUR_BOTS_PAT }}
+          ref: 'main'
           path: .github/workflows
           
       - name: Private Action
