@@ -34,4 +34,4 @@ jobs:
           path: .github/actions
           
       - name: Private Action
-        uses: ./.github/action/private-action
+        uses: ./.github/action/private-action/action.yml
