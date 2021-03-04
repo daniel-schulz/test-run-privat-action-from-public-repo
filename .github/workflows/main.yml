@@ -34,4 +34,4 @@ jobs:
           path: .github/workflows
           
       - name: Private Action
-        uses: ./test-ci.yml
+        uses: ./.github/workflows/test-ci
