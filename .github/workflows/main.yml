@@ -22,16 +22,16 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout public project repository
+        uses: actions/checkout@v2
 
-      # Uses an action from another repo
-      - uses: actions/checkout@v2
+      - name: Checkout private project repository
+        uses: actions/checkout@v2
         with:
           repository: daniel-schulz/private-actions-test
           token: ${{ secrets.YOUR_BOTS_PAT }}
           ref: 'main'
           path: .github/actions
           
-      - name: Private Action
+      - name: Run Private Action
         uses: ./.github/actions
