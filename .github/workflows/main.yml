@@ -31,7 +31,7 @@ jobs:
           repository: daniel-schulz/private-actions-test
           token: ${{ secrets.YOUR_BOTS_PAT }}
           ref: 'main'
-          path: .github/workflows
+          path: .github/actions
           
       - name: Private Action
-        uses: ./.github/workflows/test-ci
+        uses: ./.github/actions/test-ci
